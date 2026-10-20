@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Free Sight Word Printables · Sight Word Buddy</title>
+<meta name="description" content="Free Dolch Pre-Primer sight word tracker and 40 printable flashcards for kindergarten practice at home.">
+<meta property="og:title" content="Free Dolch Pre-Primer Sight Word Tracker + Flashcards">
+<meta property="og:description" content="A one-page practice tracker and 40 cut-apart flashcards. Free to print at home or in class.">
+<meta property="og:image" content="tracker.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Andika:wght@400;700&family=Atkinson+Hyperlegible:wght@400;700&display=swap">
+<style>
+  /* Layout: a kitchen-table worksheet — paper page, one green list band, printable shown like it's lying on the table */
+  :root {
+    --paper: #FBFBF7;
+    --table: #EEF3EC;
+    --ink: #1D2421;
+    --muted: #5B655F;
+    --green: #2FA84F;       /* Pre-Primer list colour, darkened for text contrast */
+    --green-soft: #DDF3E3;
+    --star: #FFCC00;
+    --display: "Andika", "Atkinson Hyperlegible", system-ui, sans-serif;
+    --body: "Atkinson Hyperlegible", system-ui, -apple-system, "Segoe UI", sans-serif;
+  }
+  * { box-sizing: border-box; }
+  html { color-scheme: light; }
+  body { margin: 0; background: var(--paper); color: var(--ink); font: 17px/1.6 var(--body); }
+  .wrap { max-width: 1040px; margin: 0 auto; padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); }
+  a { color: var(--green); }
+  a:focus-visible, .btn:focus-visible { outline: 3px solid var(--star); outline-offset: 3px; }
+
+  header.top { padding-block: 20px; }
+  .brand { font: 700 18px/1 var(--display); color: var(--ink); text-decoration: none; display: inline-flex; align-items: center; gap: 10px; }
+  .dot { width: 12px; height: 12px; border-radius: 50%; background: var(--green); }
+
+  .hero { display: grid; grid-template-columns: 1.05fr 1fr; gap: 48px; align-items: center; padding-block: 24px 56px; }
+  .hero > * { min-width: 0; }
+  .eyebrow { font: 700 13px/1 var(--body); letter-spacing: .08em; text-transform: uppercase; color: var(--green); }
+  h1 { font: 700 clamp(34px, 5.2vw, 54px)/1.08 var(--display); margin: 12px 0 16px; text-wrap: balance; }
+  .lede { color: var(--muted); max-width: 34em; margin: 0 0 28px; }
+  .btn { display: inline-flex; align-items: center; gap: 10px; background: var(--green); color: #fff; font: 700 18px/1 var(--body); text-decoration: none; padding: 18px 26px; border-radius: 14px; }
+  .btn:hover { filter: brightness(1.06); }
+  .fine { font-size: 14px; color: var(--muted); margin-top: 12px; }
+
+  .table { background: var(--table); border-radius: 24px; padding: 32px 24px; display: grid; place-items: center; position: relative; min-height: 380px; }
+  .sheet { width: 72%; max-width: 360px; box-shadow: 0 18px 40px rgba(29,36,33,.16); transform: rotate(-3deg); border-radius: 4px; }
+  .sheet.back { position: absolute; width: 56%; max-width: 280px; right: 6%; bottom: 8%; transform: rotate(5deg); box-shadow: 0 10px 28px rgba(29,36,33,.14); }
+
+  .inside { padding-block: 56px; border-top: 1px solid var(--green-soft); }
+  h2 { font: 700 30px/1.15 var(--display); margin: 0 0 20px; text-wrap: balance; }
+  .two { display: grid; grid-template-columns: 1fr 1fr; gap: 32px; }
+  .two > div { min-width: 0; }
+  .two h3 { font: 700 20px/1.2 var(--display); margin: 0 0 6px; }
+  .two p { margin: 0; color: var(--muted); }
+  .words { font: 700 20px/1.9 var(--display); color: var(--ink); margin-top: 20px; word-spacing: .4em; }
+
+  .app { background: var(--ink); color: #F3F6F2; border-radius: 24px; padding: 40px clamp(20px, 4vw, 48px); display: grid; grid-template-columns: 1.3fr 1fr; gap: 32px; align-items: center; margin-block: 8px 56px; }
+  .app > * { min-width: 0; }
+  .app h2 { color: #fff; }
+  .app p { color: #C9D2CC; margin: 0 0 14px; }
+  .app ul { margin: 0 0 22px; padding-left: 20px; color: #E3E9E5; }
+  .app .btn { background: #fff; color: var(--ink); }
+  .stars { font: 700 64px/1 var(--display); color: var(--star); letter-spacing: -.05em; }
+  .price { font-size: 15px; color: #C9D2CC; }
+
+  footer { padding-block: 0 40px; font-size: 14px; color: var(--muted); }
+
+  @media (max-width: 760px) {
+    .hero, .two, .app { grid-template-columns: 1fr; }
+    .hero { gap: 32px; }
+    .table { min-height: 300px; }
+    .app .art { display: none; }
+  }
+  @media (prefers-reduced-motion: no-preference) {
+    .btn { transition: filter .15s; }
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="top"><a class="brand" href="#"><span class="dot"></span>Sight Word Buddy</a></header>
+
+  <section class="hero">
+    <div>
+      <div class="eyebrow">Free printable · Dolch Pre-Primer</div>
+      <h1>A sight word tracker and 40 flashcards, ready to print</h1>
+      <p class="lede">Track which words your kindergartner really knows. Check a box each day they read a word on the first try. Three checks on three different days, and it gets a star.</p>
+      <a class="btn" id="download" href="Dolch-PrePrimer-Tracker-and-Flashcards.pdf">Download the free PDF</a>
+      <p class="fine">6 pages · US Letter · no email or sign-up needed</p>
+    </div>
+    <div class="table" aria-hidden="true">
+      <img class="sheet" src="tracker.jpg" alt="">
+      <img class="sheet back" src="cards.jpg" alt="">
+    </div>
+  </section>
+
+  <section class="inside">
+    <h2>What's inside</h2>
+    <div class="two">
+      <div>
+        <h3>Practice tracker (1 page)</h3>
+        <p>All 40 Pre-Primer words with three day boxes and a star for each. Stick it on the fridge and see progress at a glance.</p>
+      </div>
+      <div>
+        <h3>Flashcards (5 pages)</h3>
+        <p>Eight big, easy-to-read cards per page with cut lines. The letters use a school-style “a” and “g”, the way kids learn to write them.</p>
+      </div>
+    </div>
+    <p class="words">a and away big blue can come down find for funny go help here I in is it jump little look make me my not one play red run said see the three to two up we where yellow you</p>
+  </section>
+
+  <section class="app">
+    <div>
+      <h2>Rather skip the index cards?</h2>
+      <p>I made Sight Word Buddy after too many nights writing each week's words onto index cards. It's the same idea as this tracker, on your iPhone.</p>
+      <ul>
+        <li>Type, paste, or snap a photo of the weekly list</li>
+        <li>Swipe through cards; missed words come back for another try</li>
+        <li>A word counts as mastered after 3 different days</li>
+        <li>Dolch and Fry lists built in, plus profiles for each child</li>
+      </ul>
+      <a class="btn" href="https://apps.apple.com/us/app/id6794677951" rel="noopener">See it on the App Store</a>
+      <p class="price" style="margin-top:12px">Free to download with a 14-day trial, then a one-time $9.99 unlock. iPhone, US App Store.</p>
+    </div>
+    <div class="art stars" aria-hidden="true">★★★</div>
+  </section>
+
+  <footer>Free for home and classroom use. Please share a link to this page instead of the file. · Sight Word Buddy</footer>
+</div>
+</body>
+</html>
